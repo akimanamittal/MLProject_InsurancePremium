@@ -3,7 +3,7 @@
 
 from setuptools import find_packages,setup
 
-# to find where to install the packages,find_packages will see in which folder __init__.py file is present and 
+# to find where to install the packages,find_packages will see in which folder init file is present and 
 #that folder will be considered as package and can be import anywhere
 #setup(
 #name='mlproject_insurance',
@@ -15,8 +15,8 @@ from setuptools import find_packages,setup
 # # if I have to install multiple packages, not possible to mention here
 # so we create a function get_requirements
 #)
-import sys
-from typing import List
+
+from typing_1 import List
 
 HYPEN_E_DOT ='-e .'
 def get_requirements(file_path:str)->List[str]:
