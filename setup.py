@@ -1,8 +1,8 @@
 #responsible in creating my machine learning application as a package 
 #and deploy in pypi and anybody can install the application from there
-from pip._internal.cli.main import main
+
 from setuptools import find_packages,setup
-from typing import List,Optional
+
 # to find where to install the packages,find_packages will see in which folder __init__.py file is present and 
 #that folder will be considered as package and can be import anywhere
 #setup(
@@ -15,8 +15,8 @@ from typing import List,Optional
 # # if I have to install multiple packages, not possible to mention here
 # so we create a function get_requirements
 #)
-
-
+import sys
+from typing import List
 
 HYPEN_E_DOT ='-e .'
 def get_requirements(file_path:str)->List[str]:
